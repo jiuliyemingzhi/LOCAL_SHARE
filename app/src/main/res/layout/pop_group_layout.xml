@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/blue_500">
+
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="333dp"
+        android:layout_gravity="center"
+        android:background="@drawable/pop_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_16"
+            android:textColor="@color/blue_600"
+            android:textSize="@dimen/font_16"
+            tools:text="ID:01" />
+
+        <TextView
+            android:id="@+id/tv_group_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/len_16"
+            android:textColor="@color/blue_500"
+            android:textSize="@dimen/font_12"
+            tools:text="共有03人在线" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/len_20"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/font_8"
+            android:layout_weight="1">
+
+            <net.qiujuer.genius.ui.widget.Loading
+                android:id="@+id/loading"
+                android:layout_width="@dimen/len_64"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/len_64"
+                android:padding="@dimen/font_8"
+                app:gProgressFloat="0.4"
+                app:gBackgroundColor="@color/white"
+                app:gForegroundColor="@color/blue_300"
+                app:gAutoRun="true" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/blue_50" />
+
+        <net.qiujuer.genius.ui.widget.Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_36"
+            android:gravity="center"
+            app:gTouchDurationRate=".3"
+            android:text="@string/ok"
+            android:textColor="@color/blue_400"
+            app:gTouchColor="@color/blue_50"
+            app:gTouchCornerRadius="0dp" />
+    </LinearLayout>
+</FrameLayout>

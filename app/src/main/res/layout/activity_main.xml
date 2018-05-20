@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_anchor="@+id/frame_container"
+    tools:context=".activity.MainActivity">
+
+    <com.tencent.tencentmap.mapsdk.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb_menu"
+        android:layout_width="wrap_content"
+        app:bmb_normalColor="@color/blue_50"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/len_16"
+        android:alpha=".6"
+        app:bmb_buttonEnum="ham"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+        app:bmb_piecePlaceEnum="piecePlace_ham_4" />
+
+    <net.qiujuer.genius.ui.widget.FloatActionButton
+        android:id="@+id/float_btn_center"
+        android:layout_width="@dimen/len_32"
+        android:layout_height="@dimen/len_32"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="@dimen/len_10"
+        android:layout_marginLeft="@dimen/len_4"
+        android:alpha="0.5"
+        android:clickable="true"
+        android:foreground="@drawable/menu"
+        android:padding="@dimen/len_8"
+        android:src="@drawable/location"
+        android:tint="@color/blue_300"
+        app:gBackgroundColor="@color/white_alpha_128"
+        app:gTouchDurationRate=".5"
+        app:shadowColor="@color/white_alpha_176" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_trigger_user_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/len_16"
+        android:layout_marginRight="@dimen/font_8"
+        android:animateLayoutChanges="true"
+        android:padding="@dimen/len_4"
+        android:translationZ="@dimen/len_48">
+
+        <TextView
+            android:id="@+id/tv_list_simple_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/len_32"
+            android:textColor="@color/blue_500"
+            tools:text="组:10 共20人" />
+
+        <net.qiujuer.genius.ui.widget.ImageView
+            android:layout_width="@dimen/len_28"
+            android:layout_height="@dimen/len_28"
+            android:layout_gravity="end"
+            android:src="@drawable/list"
+            android:tint="@color/blue_400"
+            app:gTouchColor="@color/blue_300"
+            app:gTouchCornerRadius="0dp"
+            app:gTouchDurationRate=".3"
+            app:gTouchEffect="ripple" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/white_alpha_208"
+        android:translationZ="@dimen/len_48">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_users"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/len_84"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+
+</FrameLayout>

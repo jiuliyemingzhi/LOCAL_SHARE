@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LOCAL_SHARE</string>
+    <string name="bmb_group">所在分组</string>
+    <string name="group_info">组:ID:%02d,共%d人</string>
+    <string name="bmb_groups">全部分组</string>
+    <string name="bmb_groups_info">所有分享信息</string>
+    <string name="bmb_shutdown">退出</string>
+    <string name="bmb_shutdown_info">完全退出程序</string>
+    <string name="submit">提交</string>
+    <string name="network_error">网络错误!</string>
+    <string name="timeout">处理超时!</string>
+    <string name="parser_address">正在解析地址…</string>
+    <string name="loading">Loading…</string>
+    <string name="name">昵称:</string>
+    <string name="address">地址:</string>
+    <string name="no_group">未获得分享信息,请检查网络.</string>
+    <string name="ok">OK</string>
+    <string name="id">ID: %02d</string>
+    <string name="user_count">共%d人在线</string>
+    <string name="portrait_crop">头像裁剪</string>
+    <string name="in_the_group">已在该组</string>
+    <string name="join_the_group">加入该组</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="group_count">有%d个分组</string>
+</resources>

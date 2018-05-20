@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="64dp"
+    android:layout_height="@dimen/len_84">
+
+    <com.jiuli.local_share.view.PortraitView
+        android:id="@+id/portrait"
+        android:layout_width="@dimen/len_48"
+        android:padding="1dp"
+        android:layout_height="@dimen/len_48"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/len_8"
+        android:background="@drawable/portrait_background"
+        tools:src="@drawable/portrait" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/len_52"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="@dimen/len_4"
+        android:paddingEnd="@dimen/len_6"
+        android:textColor="@color/grey_600"
+        android:textSize="4.6pt"
+        tools:text="这样那样也好" />
+</FrameLayout>
