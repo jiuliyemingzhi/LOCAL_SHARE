@@ -36,7 +36,7 @@ public class FileUploader {
     @SuppressLint("SimpleDateFormat")
     private static final SimpleDateFormat bartDateFormat = new SimpleDateFormat("yyyyMM");//时间格式化
 
-    private static final String KEY = "4b1c3b41-0f70-48ba-8347-efac7daeb8bf";
+    private static final String KEY = "key";
 
     public static final String REPOSITORY_IMAGE = "image";//图片仓库
 
